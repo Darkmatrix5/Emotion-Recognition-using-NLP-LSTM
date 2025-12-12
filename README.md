@@ -1,2 +1,2 @@
-# Emotion-Recognition-using-NLP-LSTM
-A deep learning model that classifies text into emotions using LSTM, NLP preprocessing, and word embeddings. Includes training pipeline, evaluation, and prediction scripts.
+# Emotion-Recognition-using-NLP-Deep-Learning-LSTM-
+Built Emotion Recognition app using NLP &amp; Deep Learning (LSTM) model for six-class human emotion classification, enabling accurate detection of nuanced emotional states from textual data.
