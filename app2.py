@@ -7,6 +7,7 @@ from nltk.stem import PorterStemmer
 import pickle
 import nltk
 
+nltk.download('stopwords')
 stopwords=set(nltk.corpus.stopwords.words('english'))
 
 model=load_model("model1.keras")
@@ -72,3 +73,4 @@ if st.button("🔍 Predict Emotion"):
         predicted_emotion,label=predict_emotion_lstm(user_input)
         st.success(f"**Predicted Emotion:** {predicted_emotion}")
         st.info(f"**Confidence:** {label:.4f}")
+
