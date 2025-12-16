@@ -10,7 +10,7 @@ import nltk
 nltk.download('stopwords')
 stopwords=set(nltk.corpus.stopwords.words('english'))
 
-model = load_model("model1.keras", compile=False)
+model = load_model("model1.h5", compile=False)
 
 with open("lb1.pkl","rb") as f:
     lb=pickle.load(f)
@@ -73,5 +73,6 @@ if st.button("🔍 Predict Emotion"):
         predicted_emotion,label=predict_emotion_lstm(user_input)
         st.success(f"**Predicted Emotion:** {predicted_emotion}")
         st.info(f"**Confidence:** {label:.4f}")
+
 
 
